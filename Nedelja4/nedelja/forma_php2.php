@@ -12,8 +12,7 @@
 
     $fl=substr($ime,0,1);
     $sp=strpos($ime," ");
-    $ll=substr($ime,5,1);
-
+    $ll=substr($ime,$sp+1,1);
     echo "$fl.$ll."
 
 ?>
