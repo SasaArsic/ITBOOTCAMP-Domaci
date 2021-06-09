@@ -26,7 +26,7 @@ function bar_3_neparna($niz){
             $brojac++;
         }
     }
-    if($brojac >=3){
+    if($brojac >3){
         $neparni= true;
     }
     return $neparni;
