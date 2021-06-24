@@ -13,10 +13,10 @@ foreach($proizvod as $row){
     echo "<div style='border: 2px solid black'>";
     foreach($row as $val)
             echo "<span style='border: 1px solid black'>".$val."</span>";
-    echo "<form action='promena_korpe.php'>";
+    echo "<form   style='display:inline;' action='36Dpromena_korpe.php'>";
     echo "<input type='hidden' name='akcija' value='dodaj'>";
-    echo "<input type='hidden' name='id_proizvoda' value='".$row['id'].">";
-    echo "<input type='submit'  value='KUPI'>";
+    echo "<input type='hidden' name='id_proizvoda' value='".$row['id']."'>";
+    echo "<input type='submit'  value='KUPI' >";
     echo "</form>";
     echo "</div>";
 }

@@ -1,7 +1,8 @@
 <?php
 session_start();
 
-$_SESSION['stavke_korpe']=[];
+if(!isset($_SESSION['stavke_korpe']))
+    $_SESSION['stavke_korpe']=[];
 
 
 
@@ -10,12 +11,23 @@ class Stavke{
 
 
     function __construct(){
-        $this->stavke_korpe=[];
+        $this->stavke_korpe=$_SESSION['stavke_korpe'];
     }
 
     function dodaj_proizvod($id,$naziv,$cena,$kolicina){
-        $noviniz=['id'=>$id,'naziv'=>$naziv,'cena'=>$cena,'kolicina'=>$kolicina];
-        array_push($this->stavke_korpe,$noviniz);
+        $nasao=false;
+        for($i=0;$i<count($this->stavke_korpe);$i++){
+            if($this->stavke_korpe[$i]['id']== $id){
+                $this->dodaj_kolicinu($id,$kolicina);
+                $nasao=true;
+                break;
+            }
+        }
+        if(!$nasao){
+            $noviniz=['id'=>$id,'naziv'=>$naziv,'cena'=>$cena,'kolicina'=>$kolicina];
+            array_push($this->stavke_korpe,$noviniz);
+        }
+        $_SESSION['stavke_korpe']=$this->stavke_korpe;
     }
 
        
@@ -26,6 +38,7 @@ class Stavke{
                 $this->stavke_korpe[$i]['kolicina']+=$koliko;
             }
         }
+        $_SESSION['stavke_korpe']=$this->stavke_korpe;
     }
     
 
@@ -37,11 +50,23 @@ class Stavke{
                 array_splice($this->stavke_korpe,$i,1);
             }
         }
+        $_SESSION['stavke_korpe']=$this->stavke_korpe;
+    }
+    function prikaz(){
+        echo "<table border='1'>";
+        for($i=0;$i<count($this->stavke_korpe);$i++){
+            echo "<tr>";
+            echo "<td>".$this->stavke_korpe[$i]['naziv']."</td>";
+            echo "<td>".$this->stavke_korpe[$i]['cena']."</td>";
+            echo "<td>".$this->stavke_korpe[$i]['kolicina']."</td>";
+            echo "</tr>";
+        }
+        echo "</table>";
     }
 }
 
 
-// $p= new Stavke();
+$p= new Stavke();
 // $p->dodaj_proizvod(1,'lopta',900,1);
 // print_r($p);
 // echo "<br>";

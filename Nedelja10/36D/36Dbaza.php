@@ -43,6 +43,14 @@ class Baza{
         }
 
     }
+    function daj_jedan_proizvod($id){
+        $r=$this->izvrsi_select("select * from proizvodi where id=$id");
+        if($r['uspesno'] == true){
+            return $r['niz'][0];
+        }else{
+            die("Neuspesan upit: ".$r['poruka']);
+        }
+    }
 }
 
 $b= new Baza('korpa_baza');
