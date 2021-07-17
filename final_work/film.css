@@ -1,0 +1,62 @@
+
+.col-sm h3{
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 50em;
+}
+.col-sm img{
+    border: 10px double black;
+    box-shadow: 20px 20px 5px rgb(58, 22, 22);
+    
+    
+  }
+  img {
+    width: 300px;
+    height: 400px;
+  }
+  a.link-secondary {
+    color: rgb(20, 19, 19);
+    font-weight: 800;
+    margin-top: 10%;
+  }
+  nav .navbar,
+  .navbar-expand-lg,
+  .navbar-dark,
+  .bg-dark {
+    font-size: 1.5em;
+  }
+  .navbar-brand, .pull-right{
+    position: absolute;
+    right: 0;
+  }
+  
+  h3 {
+    text-align: left;
+    font-size: 2em;
+
+  }
+  .row{
+      padding: 3%;
+      
+  }
+  .col-sm{
+      padding-bottom: 5%;
+  }
+  .backgpic {
+    background: url("pics/back.png") no-repeat center / cover;
+  }
+  .logout{
+    color:black;
+    display: inline-block;
+    padding: 10px 10px;
+    font-size: 0.7em;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 10px;margin: 3%;
+  }
+

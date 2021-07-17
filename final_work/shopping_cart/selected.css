@@ -1,0 +1,33 @@
+.selected{
+        width: 70%;
+        position: relative;
+        left: 5%;
+        
+    }
+    td{
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+        text-align: left;
+        font-weight: 600;
+       
+    }
+    
+    td a{
+        display: inline-block;
+        padding: 5px 15px;
+        font-size: 1em;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: #1ba31b;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 5px rgb(180, 180, 180);
+        
+    }
+    #link{
+        text-align: center;
+    }
+

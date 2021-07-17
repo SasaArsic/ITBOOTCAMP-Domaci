@@ -1,0 +1,18 @@
+div.wrapper{
+    background-image: url("pics/camera.jpg");
+    height: 100vh;
+}
+div.container{
+    position: absolute;
+    left: 30%;
+}
+h2{
+    font-weight: 900;
+}
+form{
+    width: 50%;
+}
+button.btn,.btn-default{
+    background-color: rgb(157, 207, 107);
+    border: 1px solid black;
+}

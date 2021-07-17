@@ -1,0 +1,21 @@
+.watch{
+    position: absolute;
+    right: 3%;
+    top:10%;
+}
+#link{
+    text-decoration: none;
+    color: rgb(251, 249, 249);
+    font-weight: 800;
+}
+img{
+    height: 400px;
+}
+th.cocth{
+    background-color: rgb(42, 43, 41);
+    color: rgb(241, 236, 236);
+}
+.cartdiv{
+    background: url("tablebackg.jpg") no-repeat center / cover;
+    height: 100vh;
+}

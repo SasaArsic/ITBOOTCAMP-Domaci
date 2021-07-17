@@ -1,0 +1,120 @@
+
+div.changemovie{
+    border: 1px solid black;
+    height: 100%;
+    width: 100;
+    padding: 3%;
+   
+    background: url('pics/changeform.jpg') no-repeat top / cover; 
+
+}
+
+p{
+    position:relative;
+    left: 30%;
+    text-align: left;
+    font-size: 3em;
+    color: ghostwhite;
+}
+
+form{
+    position:relative;
+    left: 30%;
+    width: 70%;
+    height: 80%;
+}
+input, textarea{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #647972;
+    border-bottom: 1px solid #dddddd;
+    border-radius: 15px;
+    box-shadow: 0 1px rgb(180, 180, 180);
+    height: 30px;
+    width: 50%;
+    margin: 10px;
+    font-size: 1.2em;
+    padding-left: 10px;
+}
+input.s{
+    width: 10%;
+}
+textarea#desc{
+    height: 50px;
+    
+}
+#button{
+        outline: none;
+        height: 40px;
+        text-align: center;
+        width: 130px;
+        border-radius: 40px;
+        background: #fff;
+        border: 2px solid #90b9ac;
+        color: #606967;
+        letter-spacing: 1px;
+        text-shadow: 0;
+        font-size: 12px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.25s ease;
+      }
+#button:hover {
+    color: white;
+    background: #7ec3ad;
+    }
+/* #button:active {
+    letter-spacing: 2px;
+    }
+#button:after {
+content: "SUBMIT";
+} */
+
+/* .onclic {
+width: 40px;
+border-color: #bbbbbb;
+border-width: 3px;
+font-size: 0;
+border-left-color: #60a891;
+-webkit-animation: rotating 2s 0.25s linear infinite;
+        animation: rotating 2s 0.25s linear infinite;
+}
+.onclic:after {
+content: "";
+}
+.onclic:hover {
+color: #72c0a7;
+background: white;
+} */
+
+/* .validate {
+font-size: 13px;
+color: white;
+background: #93c5b5;
+}
+.validate:after {
+font-family: "FontAwesome";
+content: "";
+}
+
+@-webkit-keyframes rotating {
+from {
+    transform: rotate(0deg);
+}
+to {
+    transform: rotate(360deg);
+}
+}
+
+@keyframes rotating {
+from {
+    transform: rotate(0deg);
+}
+to {
+    transform: rotate(360deg);
+}
+} */
+
+
+
